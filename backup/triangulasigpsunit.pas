@@ -10,10 +10,25 @@ uses
 
 type
 
-  { TForm1 }
+  { TFormGPS }
 
-  TForm1 = class(TForm)
+  TFormGPS = class(TForm)
     BitBtn1: TBitBtn;
+    decjarakb: TEdit;
+    decjarakc: TEdit;
+    decxa: TEdit;
+    decxb: TEdit;
+    decxc: TEdit;
+    decya: TEdit;
+    decjaraka: TEdit;
+    decyb: TEdit;
+    decyc: TEdit;
+    dot1: TLabel;
+    dot4: TLabel;
+    dot5: TLabel;
+    dot6: TLabel;
+    dot7: TLabel;
+    dot8: TLabel;
     editjarakc: TEdit;
     editjarakb: TEdit;
     editxa: TEdit;
@@ -23,7 +38,10 @@ type
     editjaraka: TEdit;
     edityc: TEdit;
     edityb: TEdit;
-    Image1: TImage;
+    ImageRenderer: TImage;
+    dot: TLabel;
+    dot2: TLabel;
+    dot3: TLabel;
     pageTitikA: TPageControl;
     pageTitikC: TPageControl;
     pageTitikB: TPageControl;
@@ -42,6 +60,8 @@ type
     tabTitikA: TTabSheet;
     tabTitikC: TTabSheet;
     tabTitikB: TTabSheet;
+    procedure BitBtn1Click(Sender: TObject);
+    procedure FormActivate(Sender: TObject);
     procedure StaticText1Click(Sender: TObject);
   private
 
@@ -50,16 +70,31 @@ type
   end;
 
 var
-  Form1: TForm1;
+  FormGPS: TFormGPS;
+  xa, ya, jaraka, xb, yb, jarakb, xc, yc, jarakc : Real;
 
 implementation
 
 {$R *.lfm}
 
-{ TForm1 }
+{ TFormGPS }
 
-procedure TForm1.StaticText1Click(Sender: TObject);
+procedure TFormGPS.StaticText1Click(Sender: TObject);
 begin
+
+end;
+
+procedure TFormGPS.FormActivate(Sender: TObject);
+begin
+  FormGPS.ImageRenderer.Canvas.Rectangle(0,0,ImageRenderer.Width, ImageRenderer.Height);
+end;
+
+procedure TFormGPS.BitBtn1Click(Sender: TObject);
+var
+  teks : String;
+begin
+  teks := editxa.Text;
+  xa := teks.ToDouble;
 
 end;
 

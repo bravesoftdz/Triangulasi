@@ -1,10 +1,10 @@
 object FormGPS: TFormGPS
   Left = 286
-  Height = 525
-  Top = 116
+  Height = 526
+  Top = 115
   Width = 851
   Caption = 'GPS Location'
-  ClientHeight = 525
+  ClientHeight = 526
   ClientWidth = 851
   OnActivate = FormActivate
   LCLVersion = '1.8.4.0'
@@ -14,6 +14,7 @@ object FormGPS: TFormGPS
     Top = 416
     Width = 91
     Caption = 'Proses'
+    OnClick = BitBtn1Click
     TabOrder = 0
   end
   object ImageRenderer: TImage
@@ -91,6 +92,60 @@ object FormGPS: TFormGPS
         NumbersOnly = True
         TabOrder = 6
       end
+      object dot: TLabel
+        Left = 192
+        Height = 15
+        Top = 11
+        Width = 3
+        Caption = '.'
+        ParentColor = False
+      end
+      object dot2: TLabel
+        Left = 192
+        Height = 15
+        Top = 34
+        Width = 3
+        Caption = '.'
+        ParentColor = False
+      end
+      object dot3: TLabel
+        Left = 192
+        Height = 15
+        Top = 64
+        Width = 3
+        Caption = '.'
+        ParentColor = False
+      end
+      object decxa: TEdit
+        Left = 200
+        Height = 23
+        Top = 2
+        Width = 40
+        MaxLength = 2
+        NumbersOnly = True
+        TabOrder = 7
+        Text = '00'
+      end
+      object decya: TEdit
+        Left = 200
+        Height = 23
+        Top = 26
+        Width = 40
+        MaxLength = 2
+        NumbersOnly = True
+        TabOrder = 8
+        Text = '00'
+      end
+      object decjaraka: TEdit
+        Left = 200
+        Height = 23
+        Top = 56
+        Width = 40
+        MaxLength = 2
+        NumbersOnly = True
+        TabOrder = 9
+        Text = '00'
+      end
     end
   end
   object pageTitikB: TPageControl
@@ -162,6 +217,59 @@ object FormGPS: TFormGPS
         NumbersOnly = True
         TabOrder = 6
       end
+      object decxb: TEdit
+        Left = 200
+        Height = 23
+        Top = 2
+        Width = 40
+        MaxLength = 2
+        NumbersOnly = True
+        TabOrder = 7
+        Text = '00'
+      end
+      object decyb: TEdit
+        Left = 200
+        Height = 23
+        Top = 26
+        Width = 40
+        NumbersOnly = True
+        TabOrder = 8
+        Text = '00'
+      end
+      object decjarakb: TEdit
+        Left = 200
+        Height = 23
+        Top = 56
+        Width = 40
+        MaxLength = 2
+        NumbersOnly = True
+        TabOrder = 9
+        Text = '00'
+      end
+      object dot4: TLabel
+        Left = 192
+        Height = 15
+        Top = 64
+        Width = 3
+        Caption = '.'
+        ParentColor = False
+      end
+      object dot1: TLabel
+        Left = 192
+        Height = 15
+        Top = 11
+        Width = 3
+        Caption = '.'
+        ParentColor = False
+      end
+      object dot5: TLabel
+        Left = 192
+        Height = 15
+        Top = 34
+        Width = 3
+        Caption = '.'
+        ParentColor = False
+      end
     end
   end
   object pageTitikC: TPageControl
@@ -232,6 +340,60 @@ object FormGPS: TFormGPS
         Width = 104
         NumbersOnly = True
         TabOrder = 6
+      end
+      object decxc: TEdit
+        Left = 200
+        Height = 23
+        Top = 2
+        Width = 40
+        MaxLength = 2
+        NumbersOnly = True
+        TabOrder = 7
+        Text = '00'
+      end
+      object decyc: TEdit
+        Left = 200
+        Height = 23
+        Top = 24
+        Width = 40
+        MaxLength = 2
+        NumbersOnly = True
+        TabOrder = 8
+        Text = '00'
+      end
+      object decjarakc: TEdit
+        Left = 200
+        Height = 23
+        Top = 56
+        Width = 40
+        MaxLength = 2
+        NumbersOnly = True
+        TabOrder = 9
+        Text = '00'
+      end
+      object dot6: TLabel
+        Left = 192
+        Height = 15
+        Top = 64
+        Width = 3
+        Caption = '.'
+        ParentColor = False
+      end
+      object dot7: TLabel
+        Left = 192
+        Height = 15
+        Top = 11
+        Width = 3
+        Caption = '.'
+        ParentColor = False
+      end
+      object dot8: TLabel
+        Left = 192
+        Height = 15
+        Top = 34
+        Width = 3
+        Caption = '.'
+        ParentColor = False
       end
     end
   end
